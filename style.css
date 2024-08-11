@@ -1,0 +1,95 @@
+:root {
+  --background: cornflowerblue;
+  --primary: rgb(135, 211, 216);
+  --secondary: rgb(38, 110, 245);
+  --black: rgb(19, 18, 18);
+  --white: wheat;
+}
+
+* {
+  box-sizing: border-box;
+}
+h2{
+  margin-bottom: 0px;
+}
+p {
+  width: 100%; /* Asegura que el párrafo ocupe el 100% del ancho del contenedor padre */
+  max-width: 100%; /* Evita que el contenido exceda el tamaño del padre */
+  word-wrap: break-word; /* Permite que las palabras largas se rompan en múltiples líneas */
+  overflow-wrap: break-word; /* Hace lo mismo que word-wrap */
+}
+body {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--primary);
+  padding: 15px 10px;
+}
+
+main {
+  background-color: var(--secondary);
+  min-height: 400px;
+  height: auto;
+  margin-bottom: 200px !important;
+
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  border: 1px solid;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  gap: 10px;
+  
+}
+
+.container div:not(.btn) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  border-radius: 10px;
+  width: 90%;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 10px;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  color: var(--black);
+  border: solid 1px var(--black);
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (min-width: 425px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+}
