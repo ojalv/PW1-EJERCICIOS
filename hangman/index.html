@@ -9,7 +9,6 @@
   <body>
     <h1>EL juego del ahorcado</h1>
     <p>Bienvenido al juego del ahorcado. Presiona el boton para comenzar</p>
-    <button onclick="location.reload();">Reiniciar</button>
     <main class="game" id="game">
       <div id="hangman">
         <p class="name">Monigote</p>
@@ -51,10 +50,11 @@
         <div id="z">z</div>
       </div>
       <form id="try" action="">
-        <span>Introduzca una letra o palabra</span
+        <span>Introduzca una letra</span
         ><input type="text" name="letter" id="inp-letter" autocomplete="off" />
         <button id="submit" type="submit">Aceptar</button>
       </form>
+      <button onclick="location.reload();">Reiniciar</button>
     </main>
     <script src="./main.js"></script>
   </body>

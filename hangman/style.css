@@ -1,23 +1,52 @@
+:root {
+  --color1: rgb(21, 42, 95);
+  --color2: rgb(92, 127, 218);
+  --black: rgb(13, 13, 13);
+  --white: rgb(237, 221, 221);
+}
+
 * {
   box-sizing: border-box;
 }
 
+h1 {
+  margin: 8px;
+}
+
+p {
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+body {
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color1);
+}
 .game {
+  box-shadow: 10px 10px;
+  color: var(--black);
   border: solid 1px;
   position: relative;
   width: 300px;
-  height: 600px;
+  height: 480px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  background-color: var(--color2);
+  border-radius: 12px;
 }
 
 #hangman {
   position: relative;
   height: 160px;
   width: 100px;
-  scale: 0.5;
+  scale: 0.43;
 }
 #hangman .name {
   position: absolute;
@@ -26,6 +55,7 @@
   padding: 0px;
   font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: none;
 }
 #hangman .body-part {
   width: 100px;
@@ -33,6 +63,7 @@
   border: solid 1px;
   border-radius: 20px;
   background-color: greenyellow;
+  box-shadow: 5px 2px;
 }
 
 #hangman .body-part.head {
@@ -110,33 +141,48 @@
   border-bottom: none;
 }
 
-
-.wrong-letters{
-    display: flex;
-    flex-direction: row;
-    width: 52%;
-    flex-wrap: wrap;
-    gap: 2px;
-    scale: 1.5;
+.wrong-letters {
+  display: flex;
+  flex-direction: row;
+  width: 52%;
+  flex-wrap: wrap;
+  gap: 2px;
+  scale: 1;
 }
 
-.wrong-letters div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    width: 20px;
-    border: solid 1px;
-    border-collapse: collapse;
+.wrong-letters div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border: solid 1px;
+  border-collapse: collapse;
+  background-color: var(--white);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  scale: 0.8;
+  border: 1px solid;
+  border-radius: 12px;
+  box-shadow: 5px 5px;
+
+}
+
+form input {
+  width: 50%;
+  border-radius: 12px;
 }
 form div {
-    width: fit-content;
+  width: fit-content;
+}
+
+
+button {
+  box-shadow: 2px 2px;
 }
