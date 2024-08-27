@@ -115,7 +115,7 @@ function game(e) {
   }
 }
 
-const palabras = [
+const words = [
   "amigo",
   "casa",
   "perro",
