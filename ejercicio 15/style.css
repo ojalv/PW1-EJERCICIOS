@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+.game {
+  border: solid 1px;
+  position: relative;
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#hangman {
+  position: relative;
+  height: 160px;
+  width: 100px;
+  scale: 0.5;
+}
+#hangman .name {
+  position: absolute;
+  top: -160px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#hangman .body-part {
+  width: 100px;
+  height: 100px;
+  border: solid 1px;
+  border-radius: 20px;
+  background-color: greenyellow;
+}
+
+#hangman .body-part.head {
+  position: absolute;
+  top: -100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hangman .body-part.left-arm {
+  position: absolute;
+  height: 120px;
+  width: 50px;
+  top: -0px;
+  left: -50px;
+  rotate: 45deg;
+}
+
+#hangman .body-part.right-arm {
+  position: absolute;
+  height: 120px;
+  width: 50px;
+  top: -0px;
+  right: -50px;
+  rotate: -45deg;
+}
+
+#hangman .body-part.torso {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: 20px;
+}
+
+#hangman .body-part.left-leg {
+  position: absolute;
+  height: 150px;
+  width: 50px;
+  bottom: -100px;
+  left: -20px;
+  rotate: 20deg;
+}
+
+#hangman .body-part.right-leg {
+  position: absolute;
+  height: 150px;
+  width: 50px;
+  bottom: -100px;
+  right: -20px;
+  rotate: -20deg;
+}
+
+#hangman .body-part.head p {
+  rotate: 90deg;
+  font-size: 65px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.enigma-word {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.enigma-word .enigma-letter {
+  width: 20px;
+  text-align: center;
+  border-bottom: 2px solid;
+}
+
+.enigma-word .enigma-letter.space {
+  border-bottom: none;
+}
+
+
+.wrong-letters{
+    display: flex;
+    flex-direction: row;
+    width: 52%;
+    flex-wrap: wrap;
+    gap: 2px;
+    scale: 1.5;
+}
+
+.wrong-letters div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: solid 1px;
+    border-collapse: collapse;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+form div {
+    width: fit-content;
+}

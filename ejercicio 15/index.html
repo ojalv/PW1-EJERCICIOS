@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ejercicio 15</title>
+  </head>
+  <body>
+    <h1>EL juego del ahorcado</h1>
+    <p>Bienvenido al juego del ahorcado. Presiona el boton para comenzar</p>
+    <button>Comenzar</button>
+    <main class="game">
+      <div id="hangman">
+        <p class="name">Monigote</p>
+        <div class="body-part head"><p>:3</p></div>
+        <div class="body-part left-arm"></div>
+        <div class="body-part right-arm"></div>
+        <div class="body-part left-leg"></div>
+        <div class="body-part right-leg"></div>
+        <div class="body-part torso"></div>
+      </div>
+      <div class="enigma-word">
+        <div class="enigma-letter">A</div>
+        <div class="enigma-letter">B</div>
+        <div class="enigma-letter space"></div>
+        <div class="enigma-letter">C</div>
+        <div class="enigma-letter">D</div>
+        <div class="enigma-letter">E</div>
+      </div>
+      <div class="wrong-letters">
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+        <div>d</div>
+        <div>e</div>
+        <div>f</div>
+        <div>g</div>
+        <div>h</div>
+        <div>i</div>
+        <div>j</div>
+        <div>k</div>
+        <div>l</div>
+        <div>m</div>
+        <div>n</div>
+        <div>ñ</div>
+        <div>o</div>
+        <div>p</div>
+        <div>q</div>
+        <div>r</div>
+        <div>s</div>
+        <div>t</div>
+        <div>u</div>
+        <div>v</div>
+        <div>w</div>
+        <div>x</div>
+        <div>y</div>
+        <div>z</div>
+      </div>
+      <form action="submit">
+        <span>Introduzca una letra o palabra</span
+        ><input type="text" name="letter" id="inp-letter" />
+        <button type="submit">Aceptar</button>
+      </form>
+    </main>
+  </body>
+</html>
